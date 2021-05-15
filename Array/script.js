@@ -26,3 +26,22 @@ console.log("After Unshift : "+names)
 
 names.shift()
 console.log("After Shift   : "+names)
+
+
+// Fill method
+
+var testArray1 = [2, 4, 6, 8, 10, 12 ,14, 16]
+console.log("USe of fill function : " + testArray1.fill("Filling"))
+
+var testArray2 = [2, 4, 6, 8, 10, 12 ,14, 16]
+console.log("Use of fill with start postion 2: " + testArray2.fill("filling", 2))
+
+var testArray3 = [2, 4, 6, 8, 10, 12 ,14, 16]
+console.log("Use of fill with start postion 2 and end postion 5 " + testArray3.fill("filling", 2, 5))
+
+
+//  Filter method
+// Use arrow function inside the filter method
+
+var testArray = [12, 22, 34, 45, 55, 56, 67, 89, 110]
+console.log("Use of filter no above 40 : "+ testArray.filter( (num) => (num > 40) ))
