@@ -45,3 +45,15 @@ console.log("Use of fill with start postion 2 and end postion 5 " + testArray3.f
 
 var testArray = [12, 22, 34, 45, 55, 56, 67, 89, 110]
 console.log("Use of filter no above 40 : "+ testArray.filter( (num) => (num > 40) ))
+
+// Slice method
+
+var testSliceArray = ["Ram", "Ravi" , "ANil", "Ravi", "Rahul", "Prem"]
+console.log("Use of slice method start : 2 and end : 5 : " + testSliceArray.slice(2, 5))
+
+// Splice method
+
+var testSpliceArray = ["Ram", "Ravi" , "ANil", "Rakesh", "Rahul", "Prem", "Suresh", "Lokesh"]
+testSpliceArray.splice(2, 4, "praba", "kavin")
+console.log("Use of splice method start : 2, Count 4, Add praba, kavin  : " + testSpliceArray)
+
