@@ -7,3 +7,4 @@
 6. this keyword
 7. Array
 8. Objects
+9. For loop
