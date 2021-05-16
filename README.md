@@ -8,3 +8,4 @@
 7. Array
 8. Objects
 9. For loop
+10. DOM
