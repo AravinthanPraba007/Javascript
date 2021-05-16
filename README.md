@@ -9,3 +9,4 @@
 8. Objects
 9. For loop
 10. DOM
+11. Dom Counter project
