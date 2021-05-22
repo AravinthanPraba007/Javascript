@@ -47,3 +47,25 @@ console.log(testUser.getUserInfo())
 
 var courseList = true;
 console.log("this courrse list var is prsent outside : " + courseList)
+
+
+//Object Constructor
+console.log("---------- Object Constructor --------------")
+
+var Customer = function (firstName, courseCount) {
+    this.firstName = firstName,
+    this.courseCount = courseCount,
+    this.getCourseCount = function () {
+        console.log(`Enrolled course count is : ${this.courseCount}`)
+    }
+}
+
+var praba = new Customer("Praba", "4")
+console.log(praba)
+praba.getCourseCount()
+
+Customer.prototype.getFirstName = function () {
+    console.log(`You first name is ${this.firstName}`)
+}
+
+praba.getFirstName()

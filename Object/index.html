@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world</title>
+    <title>Object</title>
 </head>
 <body>
     <p>Hello Javascript !! - 8. Object </p>
@@ -16,6 +16,24 @@
         }
     </p>
     <p>Key don't need "" , only value need "" in the object</p>
+
+    <b> New concept in object -  Object constructor</b> <br>
+    <u>Object constructor basics:</u>
+    <ul>
+        <li>Creating object constructor through function</li>
+        <li>Good practice to name constructor functions with an upper-case first letter.</li>
+        <li>If you call the constructor function normally  then we will get undefined</li>
+        <li>We need to use new keyword to call the constructor function</li>
+        <li>new keyword will craete a new instance of object and do the basic responsibilty work</li>
+        <li>this keyword present in a normal function will point to window object , <br>
+        Since we are using new keyword , this inside the function refer to the craeted object </li>
+    </ul>
+    <br><br>
+    <u>Need to know about prototype :</u>
+    <ul>
+        <li>We can use protypt to inject our functions/properties to the object creation instead of doing changing in direct object constructor code</li>
+        <li> new keyword work to find the other prototype defenition provided in the code</li>
+    </ul>
     <script src="./script.js"></script>
 </body>
 </html>
