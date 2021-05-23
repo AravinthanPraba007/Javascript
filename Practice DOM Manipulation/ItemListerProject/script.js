@@ -1,13 +1,16 @@
 var form = document.getElementById('addItemForm');
 var itemList = document.getElementById('items');
-var flter = document.getElementById('filter');
-
+var filter = document.getElementById('filter');
+var clearSearch = document.getElementById('clearSearch');
 // Form submit event
 form.addEventListener('submit', addItem);
 // Delete event
 itemList.addEventListener('click', removeItem);
 // Filter event
-flter.addEventListener('keyup', filterItem);
+filter.addEventListener('keyup', filterItem);
+filter.addEventListener('change', filterItem);
+// Clear Search event
+clearSearch.addEventListener('click', clearSearchText);
 
 // Add Item
 function addItem(e){
@@ -31,6 +34,7 @@ function addItem(e){
 
     li.appendChild(delButton);
     itemList.appendChild(li);
+    newItem.value="";
 }
 
 // Remove Item
@@ -63,4 +67,12 @@ function filterItem(e){
             item.style.display = 'none';
         }
     })
+}
+
+// Clear Search
+function clearSearchText(e){
+    filter.value = "";
+    let keyUpEvent = new Event('keyup');
+    filter.dispatchEvent(keyUpEvent);
+    console.log(filter);
 }
